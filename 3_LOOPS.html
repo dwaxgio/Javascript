@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        var juego = new Array("Halo", "AOE", "NFS");
+        document.write("<br>");
+        document.write("Usando for: ");
+        document.write("<br>");
+        for(i = 0; i < juego.length; i++)
+        {
+            document.write(juego[i] + "<br>");
+        }
+        document.write("<br>");
+        
+        document.write("Usando while: ");
+        document.write("<br>");
+        var i = 0, j = 1, k;
+        document.write("Series de Fiboacci menores a 40: ");
+        document.write("<br>");
+        while(i<40)
+		{
+			document.write(i + "<br />");
+			k = i+j;
+			i = j;
+			j = k;
+        }
+        document.write("<br>");
+        
+        document.write("Usando do while: ");
+        document.write("<br>");
+        var l = 2;
+        document.write("Numeros pares menores a 20: ");
+        document.write("<br>");
+        do
+		{
+			document.write(l + "<br />");
+			l = l + 2;
+		}while(l<20)
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
