@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        var juego = new Array("Halo", "AOE", "NFS");
+        Array.prototype.displayItems = function()
+        {
+            for(i = 0; i < this.length; i++)
+            {
+                document.write(this[i] + "<br>");
+            }
+        }
+        document.write("<br>");
+        document.write("Array de juegos: ");
+        document.write("<br>");
+        juego.displayItems();
+        document.write("<br>");
+
+        document.write("Numero de juegos en el array: " + juego.length + "<br>");
+        document.write("<br>");
+
+        document.write("Array ordenado: ");
+        document.write("<br>");
+        juego.sort();
+        juego.displayItems();
+        document.write("<br>");
+
+        document.write("Array ordenado en reversa: ");
+        document.write("<br>");
+        juego.reverse();
+        juego.displayItems();
+        document.write("<br>");
+
+        document.write("Array luego de remover el último ítem: ");
+        document.write("<br>");
+        juego.pop();
+        juego.displayItems();
+        document.write("<br>");
+
+        document.write("Array despues de ingresar nuevo juego: ");
+        document.write("<br>");
+        juego.push("AC");
+        juego.displayItems();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
